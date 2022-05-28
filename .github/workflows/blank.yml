@@ -13,4 +13,7 @@ on:
 jobs:
   call-workflow:
     uses: dheredia-ok/TestRepo1/.github/workflows/maven.yml@main
+    with:
+      repo-name: ${{ github.GITHUB_REPOSITORY  }}
+      ref-name: ${{ github.GITHUB_REF_NAME  }}
   
